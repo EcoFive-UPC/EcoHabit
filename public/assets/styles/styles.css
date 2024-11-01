@@ -16,6 +16,9 @@ nav {
     height: 80px;
     width: 100%;
     background: linear-gradient(to bottom, #4CAF50, white);
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
 }
 
 nav ul{
@@ -62,11 +65,17 @@ section.banner{
 .bienvenida h1 {
     margin: 15px auto;
     font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .bienvenida p {
     font-size: 1.5rem;
     margin: 15px auto;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
 }
 
 .img_planta img {
@@ -99,6 +108,9 @@ section.banner{
     right: 300px;
     font-size: 20px;
     border-radius: 25px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
 }
 
 .boton_ios {
@@ -110,6 +122,9 @@ section.banner{
     right: 320px;
     font-size: 20px;
     border-radius: 25px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
 }
 
 
@@ -123,6 +138,9 @@ section.banner{
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .subservicios {
@@ -144,11 +162,15 @@ section.banner{
 
 .serviciox h3 {
     text-align: center;
+    
 }
 
 .serviciox p {
     margin: 25px;
     text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
 }
 
 .servicios img {
@@ -163,6 +185,9 @@ section.banner{
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .subnosotros {
@@ -185,10 +210,16 @@ section.banner{
 
 .texto_equipo p {
     text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .texto_equipo p {
     text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .logo_ecohabit img{
