@@ -1,6 +1,202 @@
-* {
-    background: white;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-#nav_1{
-    list-style-type: none;
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to bottom, #4CAF50, white);
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #03A9F4;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    border: solid 1px white;
+}
+
+/*Para la animacion del boton al pasar el cursor*/
+li a:hover{
+    background: green;
+    transition: .5s;
+}
+
+/*Seccion Banner*/
+section.banner{
+    background: linear-gradient(to left, rgb(255 255 255), rgb(234 243 240));
+    padding: 3rem 0;
+}
+
+.fila_1 {
+    padding: 4rem;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.bienvenida h1 {
+    margin: 15px auto;
+    font-size: 50px;
+}
+
+.bienvenida p {
+    font-size: 1.5rem;
+    margin: 15px auto;
+}
+
+.img_planta img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.fila_2 {
+    padding: 4rem;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.img_pie_planta img {
+    width: 500px;
+    height: 100%;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.boton_android {
+    color: #37474F;
+    background-color: #4CAF50;
+    padding: 1.5rem;
+    position: absolute;
+    top: 630px;
+    right: 300px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.boton_ios {
+    color: #37474F;
+    background-color: #4CAF50;
+    padding: 1.5rem;
+    position: absolute;
+    top: 760px;
+    right: 320px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+
+/*Seccion Servicios*/
+.servicios {
+    padding: 3rem 0;
+}
+
+.titulo_servicios {
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+
+.subservicios {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.serviciox {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.serviciox h3 {
+    text-align: center;
+}
+
+.serviciox p {
+    margin: 25px;
+    text-align: center;
+}
+
+.servicios img {
+    width: 100%;
+}
+
+/*Seccion Nosotros*/
+
+.titulo_nosotros {
+    margin-top: 120px;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+
+.subnosotros {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.img_izquierda img {
+    width: 70%;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.img_derecha img {
+    width: 70%;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.texto_equipo p {
+    text-align: center;
+}
+
+.texto_equipo p {
+    text-align: center;
+}
+
+.logo_ecohabit img{
+    width: 400px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 500px;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
