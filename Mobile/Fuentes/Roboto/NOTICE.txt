@@ -1,1 +1,2 @@
 You may use the materials in this file without restriction to develop your apps and to use in your apps.
+Fuentes y Tipografía: El uso de tipografías Montserrat y Roboto es obligatorio para asegurar la coherencia tipográfica. Las versiones de las fuentes utilizadas y sus tamaños específicos estarán documentadas en el repositorio. 
