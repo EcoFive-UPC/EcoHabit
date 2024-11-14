@@ -17,7 +17,7 @@
                 <li><a href="#">Quienes Somos</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Descargar</a></li>
-                <li><a href="#">Registrarse</a></li>
+                <li><a href="#" class="registro">Registrarse</a></li>
             </ul>
         </nav> <!--Acaba la barra de navegación-->
     </header>
@@ -132,27 +132,27 @@
             <div class="titulo_preguntas">
                 <h2>Preguntas Frecuentes</h2>
             </div>
-            <div class="pregunta-1">
+            <div class="pregunta">
                 <h3>¿Porque debería instalar su app? y ¿Que beneficios me ofrece?</h3>
-                <details class="pregunta-1-texto">
+                <details class="respuesta">
                     <summary>
                         Click para desplegar
                     </summary>
                     <p>Instalar EcoHabit te permitirá gestionar tu huella ecológica diaria de manera personalizada y efectiva. La aplicación ofrece numerosos beneficios, como el monitoreo en tiempo real de tu consumo de recursos, incluyendo agua, electricidad y alimentos. Además, fomenta la adopción de hábitos sostenibles a través de retos diarios y comparativas con la comunidad, lo que te ayudará a llevar un estilo de vida más ecológico. EcoHabit también tiene un fuerte componente educativo, guiándote en el camino hacia una vida más sostenible y ayudándote a reducir tu impacto ambiental. La integración con dispositivos inteligentes del hogar te proporcionará datos precisos y actualizados, facilitando una gestión más consciente y responsable de los recursos naturales.</p>
                 </details>
             </div>
-            <div class="pregunta-2">
+            <div class="pregunta">
                 <h3>¿Puedo conectar la app con todos mis dispositivos inteligentes o tiene algún limite?</h3>
-                <details class="pregunta-2-texto">
+                <details class="respuesta">
                     <summary>
                         Click para desplegar
                     </summary>
                     <p>EcoHabit está diseñada para integrarse con una amplia variedad de dispositivos inteligentes del hogar. Sin embargo, la compatibilidad puede depender del tipo y la marca de los dispositivos que tengas. Es recomendable verificar la lista de dispositivos compatibles en la documentación de la app o en su sitio web oficial.</p>
                 </details>
             </div>
-            <div class="pregunta-3">
+            <div class="pregunta">
                 <h3>Puedo revisar en cualquier momento el registro del consumo?</h3>
-                <details class="pregunta-3-texto">
+                <details class="respuesta">
                     <summary>
                         Click para desplegar
                     </summary>
@@ -167,62 +167,76 @@
                 <h2>Nuestros medios de pago</h2>
                 <p>Si la app es de tu agrado y quieres ayudarnos a mejorar podrías apoyarnos!</p>
             </div>
-            <div class="billeteraqr">
-                <h3>Billeteras Digital (QR)</h3>
-                <img src="assets/images/logo_yape.png" alt="Billeteras QR Yape">
-                <img src="assets/images/logo_plin.png" alt="Billeteras QR Plin">
-            </div>
-            <div class="tarjetas_paypal">
-                <h3>Tarjetas Débito/Crédito/Paypal</h3>
-                <img src="assets/images/logo_visa.png" alt="Tarjetas">
+            <div class="tipos_pago">
+                <div class="yape">
+                    <h3>Billeteras Digital (QR)</h3>
+                    <img src="assets/images/logo_yape.png" alt="Billeteras QR Yape">
+                </div>
+                <div class="plin">
+                    <h3>&nbsp;</h3>
+                    <img src="assets/images/logo_plin.png" alt="Billeteras QR Plin">
+                </div>
+                <div class="tarjetas_paypal">
+                    <h3>Tarjetas Débito/Crédito/Paypal</h3>
+                    <img src="assets/images/logo_visa.png" alt="Tarjetas">
+                </div>
             </div>
         </section><!--Acaba la sección de Medios de Pago-->
 
         <!--Sección Contactos-->
-        <section class="contactos">
-            <div class="titulo_contactos">
+        <section class="contacto">
+            <div class="titulo_contacto">
                 <h2>Contacto</h2>
                 <p>¿Tienes alguna otra duda? ¡Contáctanos!</p>
             </div>
-            <div class="imagen_izquierda">
-                <img src="assets/images/img_contacto.png" alt="Contacto">
-                <p>Serás atendido por un especialista, el cual atenderá sus dudas y cualquier otro problema que tenga.</p>
+            <div class="contacto_contenido">
+                <div class="imagen_izquierda">
+                    <img src="assets/images/img_contacto.png" alt="Contacto">
+                    <p>Serás atendido por un especialista, el cual resolverá sus dudas y cualquier otro problema que tenga.</p>
+                </div>
+                <div class="formulario">
+                    <h3>Formulario de Contacto</h3>
+                    <form class="contacto_formulario">
+                        <label></label>
+                        <input type="text" name="nombre_apellidos" placeholder="Nombre y Apellidos" required>
+                        <br>
+                        <label></label>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        <br>
+                        <label></label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                        <br>
+                        <label></label>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
-            <div class="formulario">
-                <h3>Formulario de Contacto</h3>
-                <form class="contactos_formulario">
-                    <label></label>
-                    <input type="text" name="nombre_apellidos" placeholder="Nombre y Apellidos" required>
-                    <br>
-                    <label></label>
-                    <input type="email" name="email" placeholder="Correo Electrónico" required>
-                    <br>
-                    <label></label>
-                    <input type="text" name="consulta" placeholder="Consulta" required>
-                    <br>
-                    <label></label>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </section> <!--Acaba sección Contactos-->
+        </section><!--Acaba sección Contactos-->
 
-        <!--Footer-->
+
+        <!--Footer -->
         <footer>
-            <ul>
-                <li><a href="#">Empresas Afiliadas</a></li>
-                <li><a href="#">Comunidad</a></li>
-                <li><a href="#">Publicidad</a></li>
-                <li><a href="#">Consultas</a></li>
-                <li><a href="#">Terminos y Condiciones</a></li>
-            </ul>
-            <div class="redes">
-                <h2>Redes Sociales</h2>
-                <img src="assets/images/logo_instagram.png" alt="Instagram">
-                <img src="assets/images/logo_facebook.png" alt="Facebook">
-                <img src="assets/images/logo_x.png" alt="X">
-                <img src="assets/images/logo_whatsapp.png" alt="WhatsApp">
+            <div class="footer_main">
+                <div class="footer_a">
+                    <ul>
+                        <li><a href="#">Empresas Afiliadas</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Consultas</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h2>Redes Sociales</h2>
+                    <img src="assets/images/logo_instagram.png" alt="Instagram">
+                    <img src="assets/images/logo_facebook.png" alt="Facebook">
+                    <img src="assets/images/logo_x.png" alt="X">
+                    <img src="assets/images/logo_whatsapp.png" alt="WhatsApp">
+                </div>
             </div>
-            <small>Copyright &copy; 2024 EcoHabit. Todos los derechos reservados</small>
+            <div class="copy">
+                <small>Copyright &copy; 2024 EcoHabit. Todos los derechos reservados</small>
+            </div>
         </footer>
     </main>
 </body>

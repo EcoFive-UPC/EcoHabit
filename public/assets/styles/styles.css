@@ -4,10 +4,18 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: #ffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 header{
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -17,6 +25,7 @@ nav {
     height: 80px;
     width: 100%;
     background: #ECEFF1;
+    border-radius: 15px;
 }
 
 nav ul{
@@ -28,6 +37,7 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+
 }
 
 nav ul li a{
@@ -36,13 +46,23 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 25px;
     text-transform: capitalize;
-    border: solid 1px white;
 }
 
-/*Para la animacion del boton al pasar el cursor*/
+.registro {
+    border-radius: 25px;
+    text-transform: capitalize;
+    border: solid 1px #4CAF50;
+    color: #4CAF50;
+}
+
+/*Para la animación del boton al pasar el cursor*/
 li a:hover{
-    background: green;
+    background: #4CAF50;
     transition: .5s;
+}
+
+.registro:hover {
+    background: none;
 }
 
 /*Seccion Banner*/
@@ -74,11 +94,12 @@ section.banner{
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+    left: 40px;
+    position: relative;
 }
 
 .fila_2 {
     padding: 4rem;
-    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -86,10 +107,11 @@ section.banner{
 }
 
 .img_pie_planta img {
-    width: 500px;
+    width: 140%;
     height: 100%;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
     position: relative;
+    left: 40px;
 }
 
 .boton_android {
@@ -97,10 +119,10 @@ section.banner{
     background-color: #4CAF50;
     padding: 1.5rem;
     position: absolute;
-    top: 630px;
-    right: 300px;
+    right: 250px;
     font-size: 20px;
     border-radius: 25px;
+    top: 650px;
 }
 
 .boton_ios {
@@ -108,14 +130,13 @@ section.banner{
     background-color: #4CAF50;
     padding: 1.5rem;
     position: absolute;
-    top: 760px;
-    right: 320px;
+    top: 770px;
+    right: 265px;
     font-size: 20px;
     border-radius: 25px;
 }
 
-
-/*Seccion Servicios*/
+/*Sección Servicios*/
 .servicios {
     padding: 3rem 0;
 }
@@ -125,36 +146,44 @@ section.banner{
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
+    font-size: 1.5rem;
 }
 
 .subservicios {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    grid-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .serviciox {
-    padding: 0px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+    flex: 1;
+    max-width: 30%;
 }
 
 .serviciox h3 {
     text-align: center;
+    font-size: 1.3rem;
 }
 
 .serviciox p {
     margin: 25px;
     text-align: center;
+    font-size: 17px;
 }
 
-.servicios img {
+.serviciox img {
     width: 100%;
+    height: auto;
 }
 
 /*Seccion Nosotros*/
@@ -165,6 +194,7 @@ section.banner{
     text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
+    font-size: 1.5rem;
 }
 
 .subnosotros {
@@ -178,19 +208,26 @@ section.banner{
 .img_izquierda img {
     width: 70%;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+    height: 650px;
 }
 
 .img_derecha img {
     width: 70%;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+    position: relative;
+    left: 150px;
+    height: 650px;
 }
 
 .texto_equipo p {
-    text-align: center;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
 }
 
-.texto_equipo p {
-    text-align: center;
+.texto_producto p {
+    text-align: justify;
+    font-size: 18px;
 }
 
 .logo_ecohabit img{
@@ -198,7 +235,267 @@ section.banner{
     padding: 20px;
     display: block;
     margin-left: auto;
-    margin-right: 500px;
+    margin-right: 470px;
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
 }
+
+/* Sección Preguntas Frecuentes*/
+.preguntas {
+    padding: 3rem 0;
+    margin-left: 60px;
+    color: #37474F;
+
+}
+
+.titulo_preguntas {
+    margin-bottom: 2rem;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.pregunta {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pregunta h3 {
+    margin-bottom: 0.5rem;
+}
+
+.respuesta summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.respuesta summary::marker {
+    content: '';
+}
+
+.respuesta summary::after {
+    content: '▼';
+    float: right;
+    font-size: 0.8rem;
+    transform: translateY(20%);
+}
+
+.respuesta[open] summary::after {
+    content: '▲';
+}
+
+.respuesta p {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/*Sección medios de pago*/
+.medios_pago {
+    width: 75%;
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center; /* Centra el texto */
+    color: #37474F;
+}
+
+.titulo_medios_pago h2 {
+    margin-bottom: 2rem;
+    color: #37474F;
+    font-size: 2rem;
+}
+
+.titulo_medios_pago p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tipos_pago {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de igual ancho */
+    gap: 4rem; /* Espacio entre columnas */
+    align-items: start; /* Alinea los elementos verticalmente al principio */
+}
+
+.yape, .plin, .tarjetas_paypal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.yape img, .plin img, .tarjetas_paypal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+h3 {
+    margin-bottom: 1rem; /* Espacio inferior para separación visual */
+}
+
+.plin img {
+    height: 300px;
+}
+
+.yape img {
+    height: 300px;
+}
+
+/*Sección Contacto*/
+.contacto {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.titulo_contacto h2 {
+    font-size: 2rem;
+}
+
+.titulo_contacto {
+    margin-bottom: 2rem;
+    color: #4c4c4c;
+}
+
+.titulo_contacto p {
+    font-size: 1.2rem;
+}
+
+.contacto .titulo_contacto h2,
+.contacto .titulo_contacto p {
+    margin-bottom: 1rem;
+}
+
+.contacto_contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    align-items: start;
+}
+
+.imagen_izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen_izquierda img {
+    max-width: 75%;
+    height: auto;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+    margin-bottom: 2rem;
+}
+
+.imagen_izquierda p {
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 75%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto_formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto_formulario input[type="text"],
+.contacto_formulario input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.contacto_formulario input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #03A9F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto_formulario input[type="submit"]:hover {
+    background-color: #0288D1;
+}
+
+.contacto_formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+/*Sección Footer */
+footer div {
+    background: #37474F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.footer_a ul {
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: none;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_a ul li {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.redes{
+    width: 30%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    float: right;
+}
+
+.redes h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    grid-column: span 4;
+}
+
+.redes img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+
+
+
 
