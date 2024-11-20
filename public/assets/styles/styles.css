@@ -14,18 +14,18 @@ body {
     margin: 0;
 }
 
-/*Barra de navegación*/
+/* Barra de navegación */
 header {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #ECEFF1;
-    border-radius: 15px;
-    padding: 0 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -68,6 +68,39 @@ nav ul li a:hover {
 .registro:hover {
     background: none;
     color: #4CAF50;
+}
+
+.hamburguesa {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #ECEFF1;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
 }
 
 /*Modal de registro*/
@@ -448,7 +481,7 @@ section.banner {
 }
 
 .texto {
-    display: flex;|
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -545,7 +578,7 @@ section.banner {
     color: #37474F;
 }
 
-/*Sección medios de pago*/
+/* Sección medios de pago */
 .medios_pago {
     width: 75%;
     max-width: 1200px;
@@ -587,16 +620,27 @@ section.banner {
     box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
 }
 
-h3 {
-    margin-bottom: 1rem;
-}
-
 .plin img {
-    height: 300px;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .yape img {
-    height: 300px;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .tipos_pago {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .yape img, .plin img, .tarjetas_paypal img {
+        width: 120px;
+    }
 }
 
 /*Sección Contacto*/

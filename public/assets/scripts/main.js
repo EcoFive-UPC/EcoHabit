@@ -85,5 +85,12 @@ window.onclick = function (event) {
     }
 };
 
+/*Para la barra de navegación en dispositivos pequeños*/
+function toggleMenu() {
+    const navList = document.querySelector("nav ul");
+    navList.classList.toggle("active");
+}
+
+
 
 
