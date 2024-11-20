@@ -7,7 +7,6 @@
 }
 
 body {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -449,7 +448,7 @@ section.banner {
 }
 
 .texto {
-    display: flex;
+    display: flex;|
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -704,15 +703,47 @@ h3 {
     border: 1px solid #000000;
 }
 
-/*Sección Footer */
-footer div {
-    background: #BFB8B8;
+footer {
+    bottom: 0;
+    left: 0;
     width: 100%;
+    background: #BFB8B8;
+    color: white;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: white;
+    flex-wrap: wrap;
+    z-index: auto;
+}
+
+footer div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0;
+    }
+
+    footer div {
+        padding: 0 5px;
+    }
+
+    footer div button {
+        width: 100%;
+        margin: 3px 0;
+    }
 }
 
 .footer_a ul {
@@ -722,12 +753,11 @@ footer div {
     background: none;
     font-size: 15px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer_a ul li {
-    width: 50%;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
 .footer_a ul li a {
@@ -736,13 +766,11 @@ footer div {
 
 .redes{
     width: 30%;
-    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
     justify-content: center;
     float: right;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .redes h2 {
