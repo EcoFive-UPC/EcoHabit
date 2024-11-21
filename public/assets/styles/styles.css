@@ -464,6 +464,7 @@ section.banner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 1rem;
+    max-width: 1200px;
 }
 
 .video {
@@ -550,7 +551,7 @@ section.banner {
     padding: 3rem 0;
     margin-left: 60px;
     color: #37474F;
-
+    max-width: 1200px;
 }
 
 .titulo_preguntas {
