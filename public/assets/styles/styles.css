@@ -14,6 +14,12 @@ body {
     margin: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Barra de navegación */
 header {
     width: 100%;
@@ -289,8 +295,6 @@ button:hover {
     margin-right: auto;
 }
 /*Acaba la barra de navegación*/
-
-/*Sección Banner*/
 section.banner {
     background: linear-gradient(to left, rgb(255 255 255), rgb(234 243 240));
     padding: 3rem 0;
@@ -361,9 +365,8 @@ section.banner {
         margin: 10px 0;
     }
 }
-/*Acaba la sección Banner*/
 
-/* Sección Servicios */
+/* Seccion Servicios*/
 .servicios {
     padding: 3rem 0;
     background: linear-gradient(to left, rgb(255 255 255), rgb(234 243 240));
@@ -389,7 +392,7 @@ section.banner {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    max-width: 1200px; /* Limita la expansión */
+    max-width: 1200px;
 }
 
 .serviciox {
@@ -545,13 +548,13 @@ section.banner {
         width: 100%;
     }
 }
-
-/* Sección Preguntas Frecuentes*/
+/* Sección Preguntas Frecuentes */
 .preguntas {
     padding: 3rem 0;
-    margin-left: 60px;
+    margin: 0 auto;
     color: #37474F;
     max-width: 1200px;
+    text-align: center;
 }
 
 .titulo_preguntas {
@@ -568,6 +571,7 @@ section.banner {
     border: 1px solid #ddd;
     border-radius: 8px;
     color: #37474F;
+    text-align: left;
 }
 
 .pregunta h3 {
@@ -606,7 +610,19 @@ section.banner {
     color: #37474F;
 }
 
-/* Sección medios de pago */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .preguntas {
+        margin-left: 20px;
+        padding: 2rem 0;
+    }
+
+    .respuesta p {
+        max-width: 100%;
+    }
+}
+
+/* Seccion Pagos*/
 .medios_pago {
     width: 75%;
     max-width: 1200px;
@@ -660,6 +676,7 @@ section.banner {
     height: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .tipos_pago {
         grid-template-columns: 1fr;
@@ -670,6 +687,7 @@ section.banner {
         width: 120px;
     }
 }
+
 
 /*Sección Contacto*/
 .contacto {
@@ -774,7 +792,7 @@ section.banner {
     padding: 10px;
     border: 1px solid #000000;
 }
-
+/* Seccion Footer*/
 footer {
     bottom: 0;
     left: 0;
@@ -787,6 +805,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     z-index: auto;
+    padding: 20px 0;
 }
 
 footer div {
@@ -796,12 +815,10 @@ footer div {
     padding: 0 20px;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-
-
 
 @media (max-width: 768px) {
     footer {
@@ -810,6 +827,7 @@ footer div {
 
     footer div {
         padding: 0 5px;
+        flex-direction: column;
     }
 
     footer div button {
@@ -819,29 +837,32 @@ footer div {
 }
 
 .footer_a ul {
-    float: left;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: center;
     background: none;
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 10px;
+    width: 100%;
+    padding: 0;
 }
 
 .footer_a ul li {
-    width: 100%;
+    width: auto;
+    text-align: center;
 }
 
 .footer_a ul li a {
     color: #03A9F4;
+    display: block;
+    padding: 10px 0;
 }
 
-.redes{
-    width: 30%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.redes {
+    width: auto;
+    display: flex;
     justify-content: center;
-    float: right;
+    align-items: center;
     padding-top: 5px;
 }
 
@@ -849,14 +870,21 @@ footer div {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     color: #37474F;
-    grid-column: span 4;
 }
 
 .redes img {
     width: 40px;
     transition: transform 0.3s;
+    margin: 0 10px;
 }
 
-small {
-    color: #979797;
+@media (max-width: 768px) {
+    .footer_a ul {
+        flex-direction: column;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
 }
+
