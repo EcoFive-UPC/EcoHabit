@@ -455,6 +455,33 @@ section.banner {
     text-align: center;
     color: #4c4c4c;
     font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.videos {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1rem;
+}
+
+.video {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 60%);
+}
+
+.video img{
+    width: 100px;
+}
+
+.video h2 {
+    margin-bottom: 20px;
+    font-size: 23px;
 }
 
 .subnosotros {

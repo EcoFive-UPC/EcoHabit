@@ -64,9 +64,9 @@ registroBtn.onclick = function () {
 };
 
 loginLink.onclick = function (event) {
-    event.preventDefault(); // Prevenir la navegación del enlace
-    registroModal.classList.remove("active"); // Ocultar el modal de registro
-    loginModal.classList.add("active"); // Mostrar el modal de login
+    event.preventDefault();
+    registroModal.classList.remove("active");
+    loginModal.classList.add("active");
 };
 
 cerrarRegistro.onclick = function () {
